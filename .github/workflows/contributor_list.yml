@@ -1,0 +1,17 @@
+name: Contributor List
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  contributor_list:
+    if: false # Delete this line to enable the action
+    name: Contributor List
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: cjdenio/contributor_list@master
